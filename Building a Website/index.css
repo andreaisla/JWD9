@@ -16,16 +16,18 @@ header {
     border-radius: 1em;
 }
 
-.images {
-
+.container {
+    display:flex;
 }
 
 .imagewrapper {
-
+    
 }
 
 img {
-
+    width: 100px;
+    height: 100px;
+    display: block
 }
 
 
