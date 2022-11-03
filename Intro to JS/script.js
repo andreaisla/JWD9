@@ -5,7 +5,7 @@ const url = 'https://newsapi.org/v2/everything?' +
 
 fetch(url)
     .then(response => response.json())
-    .then(response => showArticles(response.articles.Date))
+    .then(response => showArticles(response.articles))
 
 function showArticles(articles) {
     let output = "";
