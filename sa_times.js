@@ -1,8 +1,10 @@
 const re = /\(\d\d?:\d\d? - \d\d?:\d\d?\)/ig;
 
-for (let button of document.body.querySelectorAll("a")) {
-    button.onclick = () => setTimeout(removeSATimes, 50);
-}
+setTimeout(() => {
+    for (let button of document.body.querySelectorAll("a")) {
+        button.onclick = () => setTimeout(removeSATimes, 100);
+    }
+}, 1000)
 
 function removeSATimes() {
     for (let element of document.body.querySelectorAll("li")) {
